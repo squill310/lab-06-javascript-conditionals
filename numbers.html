@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var n = prompt("Please enter a number.");
+var thousandsRemainder= n%1000;
+var thousandsAfterRemainder = n-thousandsRemainder;
+var thousands = thousandsAfterRemainder/1000;
+var hundredsRemainder = thousandsRemainder%100;
+var hundredsAfterRemainder = thousandsRemainder-hundredsRemainder;
+var hundreds = hundredsAfterRemainder/100;
+var tensRemainder = hundredsRemainder%10;
+var tensAfterRemainder = hundredsRemainder-tensRemainder;
+var tens = tensAfterRemainder/10;
+var ones = tensRemainder%10
+console.log(thousands+" "+"thousands");
+console.log(hundreds+" "+"hundreds");
+console.log(tens+" "+"tens");
+console.log(ones+" "+"ones");
+</script>
+</body>
+</html>
